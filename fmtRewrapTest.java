@@ -24,6 +24,14 @@ import org.junit.Test;
  */
 public class fmtRewrapTest {
 
+	@Before
+	public void setUp() throws Exception {
+		String input;
+		String expected;
+		int length;
+	}
+
+	
 	@Test
 	public void testStub() {
 		fail("Not yet implemented");
