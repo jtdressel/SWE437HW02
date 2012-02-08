@@ -22,7 +22,7 @@ import org.junit.Test;
  * @author James Dressel
  * 
  */
-public class fmtRewrapTest {
+public class fmtRewrapBasicTest {
 
 	@Before
 	public void setUp() throws Exception {
@@ -32,9 +32,7 @@ public class fmtRewrapTest {
 	}
 
 	
-	@Test
-	public void testStub() {
-		fail("Not yet implemented");
-	}
+
+
 
 }
