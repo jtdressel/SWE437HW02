@@ -1,0 +1,15 @@
+SWE 437 Homework 2 
+Spring 2012
+JUnit
+
+Consider the fmtRewrap progam on pages 62-63 of the Ammann/Offutt text. Note that the code is available online at the book web site.
+
+Develop a set of JUnit tests to evaluate the fmtRewrap function only. (Ignore the code in the main and getN methods.) You should test normal behavior as well as exceptional behavior. Do not change the code at this time - we'll leave that to a future maintenance exercise.
+
+Write a brief (1 or 2 paragraphs) justification for the tests you selected. Document any problems you find.
+
+Bonus (1 point) Develop (decent) JavaDoc documentation for the method.
+
+Turn in this assignment on Blackboard. For credit, the GTA will need to be able to run your tests.
+
+
