@@ -1,8 +1,8 @@
-import static org.junit.Assert.*;
-
-import org.junit.Test;
 //fmtRewrapTest.java
 //James Dressel
+import static org.junit.Assert.*;
+import org.junit.Before;
+import org.junit.Test;
 
 
 /**
