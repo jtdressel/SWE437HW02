@@ -45,8 +45,11 @@ public class fmtRewrapBasicTest {
 		}
 	}
 
+	/**
+	 * Tests when given a width of zero. 
+	 */
 	@Test
-	public void zeroSizeTest(){
+	public void zeroWidthTest(){
 		//Note, it does give ArrayIndexOutOfBoundsException, which is close
 		//to what I have here, but it exposes the inner workings of the class
 		//in a way that it should not. 
@@ -129,5 +132,6 @@ public class fmtRewrapBasicTest {
 		width = 10;
 		assertEquals(expected, fmtRewrap.fmtRewrap(input,width));
 	}
+	
 	
 }
