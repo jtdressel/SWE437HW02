@@ -46,7 +46,13 @@ public class fmtRewrapBasicTest {
 		//to what I have here, but it exposes the inner workings of the class
 		//in a way that it should not. 
 		input = "A test string";
-		System.out.print(fmtRewrap.fmtRewrap("A test string",0));
+		try{
+			System.out.print(fmtRewrap.fmtRewrap(input,0));
+			fail("This code should have caused an IllegalArgumentException");
+		} catch(IllegalArgumentException e){
+			
+		}
+		
 	}
 	
 }
