@@ -1,0 +1,15 @@
+James Dressel
+SWE 437 HW 02
+
+Problems found:
+
+The formatter adds an extra new line to the end of its output. 
+The formatter gives an ArrayIndexOutOfBounds when given a small int. For example: System.out.println(fmtRewrap.fmtRewrap("The is is a long sentence, it just sort of keeps going on and on and on and on", 5));
+
+Sometimes the last line will be longer than the 
+
+System.out.println(fmtRewrap.fmtRewrap("The is is a long sentence, it just sort of keeps going on and on and on and on", 10));
+The is
+is a
+long sentence, it just sort of keeps going on and on and on and on
+
