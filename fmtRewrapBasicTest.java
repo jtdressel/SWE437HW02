@@ -7,7 +7,6 @@ import org.junit.Test;
 //TODO: happy path
 //TODO: width shorter than word
 //TODO: width same size as word
-//TODO: empty string
 //TODO: line break
 //TODO: white space
 //TODO: negative size
@@ -53,6 +52,18 @@ public class fmtRewrapBasicTest {
 			
 		}
 		
+	}
+	
+	/**
+	 * Test when given an empty String.
+	 * Note: This test fails because it returns an extra line break. I chose
+	 * to interpret the expected behavior to not add a line break. 
+	 */
+	@Test
+	public void emptyStringTest(){
+		input = "";
+		expected = "";
+		assertEquals(expected, fmtRewrap.fmtRewrap(input,10));
 	}
 	
 }
