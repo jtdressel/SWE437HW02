@@ -4,6 +4,16 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
+/*
+ * Justification:
+ * 
+ * The below tests cover most possible flows. It tests when the width 
+ * shorter than and longer than words in the string. It tests different 
+ * values for width, such as being negative, or zero. It tests when the 
+ * string is null, or when the string is empty. It tests when the string 
+ * already has formatting of its own. 
+ * 
+ */
 
 /**
  * Test file for fmtRewrap
