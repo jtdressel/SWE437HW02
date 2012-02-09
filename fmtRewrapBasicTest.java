@@ -54,6 +54,23 @@ public class fmtRewrapBasicTest {
 		
 	}
 	
+	@Test
+	public void negativeSizeTest(){
+		//Note, it does give ArrayIndexOutOfBoundsException, which is close
+		//to what I have here, but it exposes the inner workings of the class
+		//in a way that it should not. 
+		input = "A test string";
+		width = -4;
+		
+		try{
+			System.out.print(fmtRewrap.fmtRewrap(input,width));
+			fail("This code should have caused an IllegalArgumentException");
+		} catch(IllegalArgumentException e){
+			
+		}
+		
+	}
+	
 	/**
 	 * Test when given an empty String.
 	 * Note: This test fails because it returns an extra line break. I chose
