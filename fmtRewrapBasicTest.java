@@ -10,7 +10,6 @@ import org.junit.Test;
 //TODO: empty string
 //TODO: line break
 //TODO: white space
-//TODO: zero size
 //TODO: negative size
 //TODO: no spaces
 //TODO: all spaces
@@ -41,5 +40,13 @@ public class fmtRewrapBasicTest {
 		}
 	}
 
-
+	@Test
+	public void zeroSizeTest(){
+		//Note, it does give ArrayIndexOutOfBoundsException, which is close
+		//to what I have here, but it exposes the inner workings of the class
+		//in a way that it should not. 
+		input = "A test string";
+		System.out.print(fmtRewrap.fmtRewrap("A test string",0));
+	}
+	
 }
