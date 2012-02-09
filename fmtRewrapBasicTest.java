@@ -32,7 +32,15 @@ public class fmtRewrapBasicTest {
 	}
 
 	
-
+	@Test
+	public void nullStringTest(){
+		try{
+			fmtRewrap.fmtRewrap(null,10);
+			fail("Should have NullPointerException");
+		}catch(NullPointerException e){
+			
+		}
+	}
 
 
 }
