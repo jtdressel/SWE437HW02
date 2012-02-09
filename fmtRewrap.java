@@ -9,7 +9,6 @@
 *  be "hard CRs" and are left alone.
 ********************************************************* */
 import java.io.*;
-
 class fmtRewrap
 {
 
@@ -18,6 +17,16 @@ static final int inWord      = 0;
 static final int betweenWord = 1;
 static final int lineBreak   = 2;
 static final int crFound     = 3;
+
+/**
+ * Formats a string to a certain width. Each line of the string can only be
+ * a specified width, after which a new line is inserted, and the line 
+ * continues below.
+ * 
+ * @param S String to be formatted. 
+ * @param N Integer of width to format the string to. 
+ * @return formatted string. 
+ */
 static public String fmtRewrap (String S, int N)
 {
    int state = betweenWord;
