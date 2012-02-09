@@ -9,7 +9,6 @@ import org.junit.Test;
 //TODO: width same size as word
 //TODO: line break
 //TODO: white space
-//TODO: negative size
 //TODO: no spaces
 //TODO: all spaces
 //TODO: non-printable
