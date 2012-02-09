@@ -10,7 +10,6 @@ import org.junit.Test;
 //TODO: line break
 //TODO: white space
 //TODO: no spaces
-//TODO: all spaces
 //TODO: non-printable
 
 /**
@@ -80,6 +79,19 @@ public class fmtRewrapBasicTest {
 	public void emptyStringTest(){
 		input = "";
 		expected = "";
+		width = 10;
+		assertEquals(expected, fmtRewrap.fmtRewrap(input,width));
+	}
+	
+	/**
+	 * Test when given all spaces
+	 * Note: This test fails because it returns an extra line break. I chose
+	 * to interpret the expected behavior to not add a line break. 
+	 */
+	@Test
+	public void allSpacesTest(){
+		input = "            ";
+		expected = "            ";
 		width = 10;
 		assertEquals(expected, fmtRewrap.fmtRewrap(input,width));
 	}
