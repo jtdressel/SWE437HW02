@@ -4,7 +4,6 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-//TODO: happy path
 
 /**
  * Test file for fmtRewrap
@@ -20,6 +19,18 @@ public class fmtRewrapBasicTest {
 
 	}
 
+	/**
+	 * Tests the happy path of execution
+	 * 
+	 * Ironically, this test fails because the formatter adds an extra new line
+	 */
+	@Test 
+	public void happyPathTest(){
+		input = "A test string";
+		width = 10;
+		expected = "A test \n string";
+		assertEquals(expected,fmtRewrap.fmtRewrap(input, width));
+	}
 	
 	@Test
 	public void nullStringTest(){
