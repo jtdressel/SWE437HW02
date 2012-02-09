@@ -7,7 +7,6 @@ import org.junit.Test;
 //TODO: happy path
 //TODO: width shorter than word
 //TODO: width same size as word
-//TODO: null string
 //TODO: empty string
 //TODO: line break
 //TODO: white space
