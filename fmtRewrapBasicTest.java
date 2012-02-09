@@ -32,6 +32,9 @@ public class fmtRewrapBasicTest {
 		assertEquals(expected,fmtRewrap.fmtRewrap(input, width));
 	}
 	
+	/**
+	 * Test when given a null string. Should give a NullPointerException. 
+	 */
 	@Test
 	public void nullStringTest(){
 		try{
