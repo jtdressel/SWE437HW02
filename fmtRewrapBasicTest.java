@@ -5,11 +5,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 //TODO: happy path
-//TODO: width shorter than word
 //TODO: width same size as word
-//TODO: line break
 //TODO: white space
-//TODO: no spaces
 //TODO: non-printable
 
 /**
@@ -92,6 +89,33 @@ public class fmtRewrapBasicTest {
 	public void allSpacesTest(){
 		input = "            ";
 		expected = "            ";
+		width = 10;
+		assertEquals(expected, fmtRewrap.fmtRewrap(input,width));
+	}
+	
+	/**
+	 * Test when the string contains a new line
+	 * The formatter should remove any newlines. 
+	 * Note: This test fails because it returns an extra line break. I chose
+	 * to interpret the expected behavior to not add a line break. 
+	 */
+	@Test
+	public void newLineTest(){
+		input = "Test \n test";
+		expected = "Test \n test";
+		width = 10;
+		assertEquals(expected, fmtRewrap.fmtRewrap(input,width));
+	}
+	
+	//",10
+	
+	/**
+	 * Test when the string contains a word this is longer than the width. 
+	 */
+	@Test
+	public void wordLongerThanWidthTest(){
+		input = "Thisisareallylongword";
+		expected = "Thisisarea\nllylongwor\nd";
 		width = 10;
 		assertEquals(expected, fmtRewrap.fmtRewrap(input,width));
 	}
