@@ -22,7 +22,7 @@ import org.junit.Test;
 public class fmtRewrapBasicTest {
 	String input;
 	String expected;
-	int length;
+	int width;
 	@Before
 	public void setUp() throws Exception {
 
