@@ -81,7 +81,8 @@ public class fmtRewrapBasicTest {
 	public void emptyStringTest(){
 		input = "";
 		expected = "";
-		assertEquals(expected, fmtRewrap.fmtRewrap(input,10));
+		width = 10;
+		assertEquals(expected, fmtRewrap.fmtRewrap(input,width));
 	}
 	
 }
