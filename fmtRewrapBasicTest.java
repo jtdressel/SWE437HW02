@@ -5,9 +5,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 //TODO: happy path
-//TODO: width same size as word
-//TODO: white space
-//TODO: non-printable
 
 /**
  * Test file for fmtRewrap
