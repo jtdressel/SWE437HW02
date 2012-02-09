@@ -115,8 +115,7 @@ public class fmtRewrapBasicTest {
 		assertEquals(expected, fmtRewrap.fmtRewrap(input,width));
 	}
 	
-	//",10
-	
+
 	/**
 	 * Test when the string contains a word this is longer than the width. 
 	 */
